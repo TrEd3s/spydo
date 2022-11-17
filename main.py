@@ -5,7 +5,8 @@ import random
 from colorama import Fore, Style
 
 # Creará una lista en la memoria con la cantidad
-# dada y lo rellenará con números aleatorios 
+# dada y lo rellenará con 999999999999
+# size: Tamaño del bloque en la memoria 
 def ram_thread(size):
 	l = []
 	for x in range(size):
@@ -14,6 +15,7 @@ def ram_thread(size):
 
 
 # Creara archivos
+# size: Tamaño del archivo
 def file_thread(filename, size):
 	filename = "tmp/" + filename
 	fd = open(filename, "w")
